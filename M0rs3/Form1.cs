@@ -170,7 +170,7 @@ namespace M0rs3
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            string message = "Se for sobre alguns caracteres que levam acentuação,alguns caracteres não estão disponiveis devido de não haver uma tradução certa para o caracter." +
+            string message = "Se for sobre alguns caracteres que levam acentuação, alguns caracteres não estão disponiveis devido de não haver uma tradução certa para o caracter." +
                 "\n\nSe não for sobre isso, sê livre de ir ao meu Website para relatar sobre algum problema.";
                string ws = Environment.NewLine + "\nhttps://h3nr1qu3x.github.io/website/contact.html";
             MessageBox.Show(message + ws,"Ajuda" , MessageBoxButtons.OK, MessageBoxIcon.Information);
