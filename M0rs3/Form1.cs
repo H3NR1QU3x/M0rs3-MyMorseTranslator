@@ -136,20 +136,12 @@ namespace M0rs3
 
         private void rbnTextToMorse_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbnTextToMorse.Checked == true)
-            {
-                txtInput.Text = "";
-                txtOutput.Text = "";
-            }
+            
         }
 
         private void rbnMorseToText_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbnMorseToText.Checked == true)
-            {
-                txtInput.Text = "";
-                txtOutput.Text = "";
-            }
+            
         }
 
         private void btnCopy_Click(object sender, EventArgs e)
@@ -182,6 +174,12 @@ namespace M0rs3
                 "\n\nSe não for sobre isso, sê livre de ir ao meu Website para relatar sobre algum problema.";
                string ws = Environment.NewLine + "\nhttps://h3nr1qu3x.github.io/website/contact.html";
             MessageBox.Show(message + ws,"Ajuda" , MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtInput.Text = "";
+            txtOutput.Text = "";
         }
     }
 }
